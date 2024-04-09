@@ -1,0 +1,43 @@
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2022/10/19/20/16/background-7533503_1280.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: white; /* Set background color to white */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center contents horizontally */
+    align-items: center; /* Center contents vertically */
+    height: 90vh;
+    flex-direction: column;
+
+.container {
+    width: 360px; /* Adjusted width to accommodate padding and border */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white; /* Set background color to white */
+}
+
+h1 {
+    font-size: 28px; /* Set font size */
+    color: #333; /* Set text color */
+}
+.login-form input[type='text'],
+.login-form input[type='password'] {
+    width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.login-form input[type='submit'] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Adjusted width */
+    text-align: center;
+}
+}
