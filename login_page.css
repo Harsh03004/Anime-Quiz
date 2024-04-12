@@ -22,6 +22,12 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    opacity: 0; /* Initially hide the container */
+}
+
+.container.show {
+    opacity: 1; /* Show the container with transition */
+    transition: opacity 1s ease-in-out;
 }
 
 .container::before {

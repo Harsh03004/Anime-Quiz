@@ -16,18 +16,13 @@ sign_in_btn2.addEventListener("click", () => {
     container.classList.remove("sign-up-mode2");
 });
 // Wait for the DOM content to load
-// document.addEventListener("DOMContentLoaded", function() {
-//     // Select the container and image elements
-//     const container = document.querySelector('.container');
-//     const image = document.querySelector('.image');
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the container element
+    const container = document.querySelector('.container');
     
-//     // Add the show class to the container after a delay (e.g., 1 second)
-//     setTimeout(function() {
-//         container.classList.add("show");
-//     }, 1000); // Adjust the delay as needed
-    
-//     // After the delay, remove the transform applied to the image
-//     setTimeout(function() {
-//         image.style.transform = 'none';
-//     }, 1000); // Same delay as above
-// });
+    // Add the show class to the container after a delay (e.g., 1 second)
+    setTimeout(function() {
+        container.classList.add("show");
+    }, 1000); // Adjust the delay as needed
+});
+
