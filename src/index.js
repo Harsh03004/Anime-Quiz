@@ -41,7 +41,9 @@ app.post("/signup", async (req, res) => {
             // Save the new user to the database
             const savedUser = await newUser.save();
             console.log(savedUser);
-            res.send("User registered successfully!");
+            res.render("login-signup");
+
+            
         }
 
     } catch (error) {
