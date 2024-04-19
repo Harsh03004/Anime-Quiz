@@ -78,35 +78,183 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'Who is the main character in "Naruto"?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Sasuke Uchiha', correct: false },
+      { text: 'Naruto Uzumaki', correct: true },
+      { text: 'Sakura Haruno', correct: false },
+      { text: 'Kakashi Hatake', correct: false }
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'In Dragon Ball Z, what is Goku signature attack?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Rasengan', correct: false },
+      { text: 'Kamehameha', correct: true },
+      { text: 'Chidori', correct: false },
+      { text: 'Spirit Bomb', correct: false }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'What is the name of the protagonist in "Attack on Titan"?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Mikasa Ackerman', correct: false },
+      { text: 'Eren Jaeger', correct: true },
+      { text: 'Armin Arlert', correct: false },
+      { text: 'Levi Ackerman', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'Which anime features a group of high school students forming a band called "Afterglow"?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: 'Love Live!', correct: false },
+      { text: 'K-On!', correct: false },
+      { text: 'BanG Dream!', correct: true },
+      { text: 'Hibike! Euphonium', correct: false }
     ]
-  }
+  },
+  {
+    question:'In "One Piece," what is the name of the main character straw hat?',
+    answers:[
+      {text:'Red Straw Hat',correct:false},
+      {text:'Legendary Hat',correct:false},
+      {text:'Straw Hat Luffy',correct:true},
+      {text:'The Pirate King Hat',correct:false},
+    ]
+  },
+  {
+    question:'What is the name of the world where "Sword Art Online" takes place?',
+    answers:[
+      {text:'Aincrad',correct:true},
+      {text:'Alfheim',correct:false},
+      {text:'Gun Gale Online',correct:false},
+      {text:'Underworld',correct:false},
+    ]
+  },
+  {
+    question:'Which anime follows the story of two brothers, Edward and Alphonse, in search of the Philosopher Stone?',
+    answers:[
+      {text:'Fullmetal Alchemist',correct:true},
+      {text:'Black Clover',correct:false},
+      {text:'Bleach',correct:false},
+      {text:'Fairy Tail',correct:false},
+    ]
+  },
+  {
+    question:'In "My Hero Academia," what is Izuku Midoriya superhero name?',
+    answers:[
+      {text:'Dynamight',correct:false},
+      {text:'Red Riot',correct:false},
+      {text:'Deku',correct:true},
+      {text:'Ingenium',correct:false},
+    ]
+  },
+  {
+    question:'Who is known as the "Strongest Disciple" in "Kenichi: The Mightiest Disciple"?',
+    answers:[
+      {text:'Kenichi Shirahama',correct:false},
+      {text:'Miu Furinji',correct:false},
+      {text:'Shigure Kosaka',correct:false},
+      {text:'Hayato Furinji',correct:true},
+    ]
+  },
+  {
+    question:'In "Death Note," who is the main antagonist?',
+    answers:[
+      {text:'Light Yagami',correct:false},
+      {text:'Ryuk',correct:false},
+      {text:' L Lawliet',correct:true},
+      {text:'Near',correct:false},
+    ]
+  },
+  {
+    question:'What is the name of the legendary pirate in "One Piece" whose treasure, the One Piece, is sought by many?',
+    answers:[
+      {text:'Blackbeard',correct:false},
+      {text:'Gol D. Roger',correct:true},
+      {text:'Monkey D. Luffy',correct:false},
+      {text:'Shanks',correct:false},
+    ]
+  },
+  {
+    question:'Which anime features a group of students who try to revive their school defunct club?',
+    answers:[
+      {text:'The Melancholy of Haruhi Suzumiya',correct:false},
+      {text:'Clannad',correct:false},
+      {text:'Hyouka',correct:true},
+      {text:'Angel Beats!',correct:false},
+    ]
+  },
+  {
+    question:'In "Demon Slayer: Kimetsu no Yaiba," what is the name of Tanjiro Kamado sister who becomes a demon?',
+    answers:[
+      {text:'Nezuko Kamado',correct:true},
+      {text:'Kanao Tsuyuri',correct:false},
+      {text:'Mitsuri Kanroji',correct:false},
+      {text:'Shinobu Kocho',correct:false},
+    ]
+  },
+  {
+    question:'What is the name of the main character in "Cowboy Bebop"?',
+    answers:[
+      {text:'Spike Spiegel',correct:true},
+      {text:'Jet Black',correct:false},
+      {text:'Faye Valentine',correct:false},
+      {text:'Edward Wong Hau Pepelu Tivrusky IV',correct:false}
+    ]
+  },
+  {
+    question:'Which anime features a world where humans coexist with creatures known as "ghouls" who eat human flesh?',
+    answers:[
+      {text:'Tokyo Ghoul',correct:true},
+      {text:'Parasyte',correct:false},
+      {text:'Attack on Titan',correct:false},
+      {text:'Claymore',correct:false}
+    ]
+  },
+  {
+    question:'In "Hunter x Hunter," what is the name of the protagonist searching for his father?',
+    answers:[
+      {text:'Kurapika',correct:false},
+      {text:'Gon Freecss',correct:true},
+      {text:'Leorio',correct:false},
+      {text:'Killua Zoldyck',correct:false}
+    ]
+  },
+  {
+    question:'Which anime revolves around the sport of volleyball and follows the journey of the Karasuno High School volleyball team?',
+    answers:[
+      {text:'Ace of Diamond',correct:false},
+      {text:'Kurokos Basketball',correct:false},
+      {text:'Free!',correct:false},
+      {text:'Haikyuu!!',correct:true}
+    ]
+  },
+  {
+    question:'What is the name of the giant humanoid robots piloted by characters in "Neon Genesis Evangelion"?',
+    answers:[
+      {text:'Angels',correct:false},
+      {text:'Titans',correct:false},
+      {text:'Evas',correct:true},
+      {text:'Gundams',correct:false}
+    ]
+  },
+  {
+    question:'Which anime features a world where humanity is on the brink of extinction due to giant humanoid creatures known as Titans?',
+    answers:[
+      {text:'Attack on Titan',correct:true},
+      {text:'Akame ga Kill!',correct:false},
+      {text:'Seraph of the End',correct:false},
+      {text:'Highschool of the Dead',correct:false}
+    ]
+  },
+  {
+    question:'What is the name of the protagonist in "Mob Psycho 100" who has psychic abilities?',
+    answers:[
+      {text:'Shigeo Kageyama',correct:false},
+      {text:'Reigen Arataka',correct:false},
+      {text:'Ritsu Kageyama',correct:true},
+      {text:'Teruki Hanazawa',correct:false}
+    ]
+  },
 ]
