@@ -69,9 +69,6 @@ app.post("/login", async (req, res) => {
         return res.status(500).send("Error logging in");
     }
 });
-
-
-
 const port = 5000;
 app.listen(port, () => {
     console.log(`Server running on Port: ${port}`);
