@@ -63,10 +63,37 @@ app.post("/login", async (req, res) => {
         if (!user) {
             return res.send("Invalid username or password");
         } else {
-            return res.render("home");
+            // Update the user's score here if needed
+            const updatedUser = await collection.findOneAndUpdate(
+                { username: req.body.username },
+                { $inc: { score: 10 } }, // Increment score by 10 (or any other value)
+                { new: true } // Return the updated document
+            );
+            // You can also return the updated user document if needed
+            return res.render("home", { user: updatedUser });
         }
     } catch {
         return res.status(500).send("Error logging in");
+    }
+});
+app.post("/quiz", async (req, res) => {
+    try {
+        const { username, correctAnswers } = req.body;
+        const user = await collection.findOne({ username: username });
+        if (user) {
+            // Calculate the score based on the number of correct answers
+            const scoreIncrease = correctAnswers * 5;
+            // Increment the user's score
+            user.score += scoreIncrease;
+            // Save the updated score to the database
+            await user.save();
+            return res.send("Score updated successfully");
+        } else {
+            return res.status(404).send("User not found");
+        }
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send("Error updating score");
     }
 });
 const port = 5000;

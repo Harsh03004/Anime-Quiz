@@ -18,6 +18,10 @@ const LoginSchema = new mongoose.Schema({
     password:{
         type:String,
         required:true
+    },
+    score: {
+        type: Number,
+        default: 0 // Set default score to 0
     }
 });
 
